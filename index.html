@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
+  <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    video {
+            width: 80vw;
+            height: 48.25vw; /* Rapporto di aspetto 16:9 */
+            object-fit: cover;
+        }
+   
+  </style>
+</head>
+<body class="sm:hidden overflow-x-hidden w-screen " >
+  <!--first page-->
+  <div id = "home" class="w-screen h-screen relative top-0  bg-[#0044b2] flex justify-center items-center  ">
+    <!--navbar-->
+    <nav class="flex w-screen  justify-around py-4 items-center bg-yellow-300 shadow-md fixed top-0 left-0 z-10">
+      <div class=" text-4xl"><img src="images/logo2.png" alt="logo" class="w-[60px]"></div>
+      <ul class=" w-full absolute top-[-180px]  flex flex-col items-center gap-5 text-xl opacity-0 transition-all ease-in z-10 bg-yellow-300 shadow-md md:w-fit md:relative md:top-0 md:flex-row md:opacity-100 md:shadow-none md:item-center md:gap-4 text-[#0044b2] pb-10 font-bold">
+        <li ><a href="#home" class="cursor-pointer">Home</a></li>
+        <li><a href="#notizie" class="cursor-pointer">Notizie</a></li>
+        <li><a href="#clip" class="cursor-pointer">Clip</a></li>
+        <li><a href="#FUT" class="cursor-pointer bg-[#0044b2] text-yellow-300 Erounded shadow-md hover:scale-105 transition-all ease-in px-4 py-2 rounded  ">Carte FUT</a></li>
+        <!--<button class="bg-[#0044b2] text-white py-2 px-2 rounded shadow-md hover:scale-105 transition-all ease-in mb-4 md:mb-0 ">Contattaci</button>-->
+      </ul>
+      <div class="menu flex flex-col gap-1.5 md:hidden ">
+        <div class="w-[40px] h-[5px] bg-[#0044b2] rounded "></div>
+        <div class="w-[40px] h-[5px] bg-[#0044b2]  rounded"></div>
+        <div class="w-[40px] h-[5px] bg-[#0044b2]  rounded"></div>
+      </div>
+    </nav>
+    <div class="flex flex-col mt-20 gap-10 ">
+      <img src="./images/squadra1.jpg" alt="foto" class="shadow rounded-md px-4">
+      <div class=" w-screen" >
+        <h2 class="text-2xl text-center  text-yellow-300 font-bold">CHI SIAMO</h2>
+        <p  class="text-gray-400 mt-4 text-center px-10">Il tempo passa e noi stiamo ancora lì: a correre dietro un pallone. Siamo un gruppo di amici che si diverte a giocare a calciotto il weekend;)</p>
+      </div>
+      <div class="w-full flex justify-center"><a href = "#FUT" class="text-[#0044b2] bg-yellow-300 w-fit px-2 py-1 rounded shadow-md mt-[-20px] hover:scale-105">Carte FUT</a></div>
+    </div>
+  </div>
+  <!--notize-->
+  <div class="bg-white flex w-screen h-screen">
+    <div class="flex flex-col gap-5 relative" id="notizie">
+      <h2 class="text-3xl text-[#0044b2] mt-16 text-center font-bold">NOTIZIE</h2>
+      <div class=" w-screen flex  flex-col items-center gap-10 transition-all ease-in">
+        <p class="text-gray-500 px-6 text-center">Brutta tegola per la squadra, l'attaccante Leonardo Paglia dopo aver consultato i medici ha decisoo di intraprendere una terapia conservativa, da tempo il giocatore accusava di un fastidio alla caviglia. Ora la squadra si trova senza un leader carismatico, riuscirà qualcuno a caricarsi la squadra sulle spalle??. </p>
+        <img src="images/hospital.png" alt="paglia è rotto" class="w-52">
+      </div>
+      <div class=" w-screen hidden flex-col items-center gap-10 transition-all ease-in">
+        <p class="text-gray-500 px-6 text-center">
+          Sta di forma strabiliante per il giocatore Gualdini, nella scorsa partita il suo nome è comparso per ben cinque volte nel tabellino dei marcatori. A cosa è dovuta una condizione fisica del genere: All'uso di coca o è solo il frutto di tante ore in palestra?E chi lo sa...
+        
+        </p>
+        <img src="images/kunigami.png" alt="gualdini uomo" class="w-52">
+      </div>
+
+      <div class=" w-screen hidden flex-col items-center gap-10 transition-all ease-in">
+        <p class="text-gray-500 px-6 text-center ">
+          Da diverse partite l'attaccante Urro non riesce ad incidere tanto da sollevere una grande polveriera di critiche. Il giocatore dopo un inizio di stagione con i fiochi sembra aver perso lo smalto. Riuscirà Urro a sbloccarsi nella prossima partita? È una domanda che si fanno in molti...
+        </p>
+        <img src="images/hate.png" alt="urro corri" class="w-52">
+      </div>
+      <button class="bg-yellow-300  py-1 px-2 w-fit rounded-md text-[#0044b2] font-bold shadow-md mx-5 mt-10 text-3xl absolute top-[70vh]" id="btn_not">>></button>
+    </div>
+  </div>
+
+  <!--third page-->
+  <div class="w-screen h-screen bg-yellow-300 flex flex-col items-center justify-center px-10 gap-16 relative z-0" id="clip">
+    <div class="w-fit flex flex-col justify-center items-center gap-3 mt-[-50px]">
+      <h2 class="text-[#0044b2] text-3xl font-bold">CLIP DEL MESE</h2>
+      <p class="text-center text-gray-600 text-sm">Un'azione corale fantastica: tocco di tacco di Paglia seguito da un colpo da maestro al volo di Pietro, che insacca la palla dietro al portiere incredulo.Tutta la difesa scioccata di fronte ad un azione del genere. Resta da capire se sia stato più bello l'asist o il goal, che duo ragazzi!!!</p>
+      <img src="images/figure2.png" alt="" class="w-[100px] top-10 right-3 absolute">
+      <img src="images/figure1.png" alt="" class="w-[150px] absolute left-3 bottom-10">
+      
+    </div>
+    <div class="p-3 bg-[#0044b2] w-fit rounded-tl-md rounded-br-md shadow-md ">
+      <video  controls autoplay muted >
+        <source src="images/golasso.mp4" type="video/mp4 ">
+      </video>
+    </div>
+  </div>
+  <!--third page-->
+
+  <div class="w-screen  bg-black" id="FUT">
+    <h2 class="text-center text-yellow-400 text-4xl mt-24 mb-24">CARTE FUT</h2>
+  </div>
+  <!--forth page-->
+  <div class="bg- w-full h-screen bg-[#0044b2] text-white">FRA STIAMO ANCORA A LAVORA, PARTE CONTATTI ANCORA NON DIPONIBILE.
+    <br>COMUNQUE CR7>>>MESSI
+  </div>
+
+  <script>
+    var j =1;
+    var inverse = false;
+    const menu = document.querySelector(".menu");
+    const linkbar = document.getElementsByTagName("ul")[0]
+    const fut = document.getElementById("FUT");
+    const notizie = document.getElementById("notizie")
+    const btn_not = document.getElementById("btn_not")
+    console.log(btn_not)
+
+    
+    for(let i=1;i<19;i++){
+      var imgEl = document.createElement("img")
+      imgEl.src = `./images/cartebase/cartan${i}.jpg`;
+      fut.append(imgEl)
+    }
+
+
+    
+    menu.addEventListener("click",()=>{
+      linkbar.classList.toggle("top-[-180px]")
+      linkbar.classList.toggle("top-[90px]")
+      linkbar.classList.toggle("opacity-0")
+      linkbar.classList.toggle("opacity-100")
+      menu.children[1].classList.toggle("hidden")
+     
+      
+      menu.children[2].classList.toggle("rotate-45")
+      menu.children[2].classList.toggle("mt-[-10px]")
+      menu.children[0].classList.toggle("-rotate-45")
+
+
+    })
+
+    btn_not.addEventListener("click",()=>{
+      if(j<notizie.children.length-2){
+        notizie.children[j].classList.toggle("flex")
+        notizie.children[j].classList.toggle("hidden")
+        notizie.children[j+1].classList.toggle("flex")
+        notizie.children[j+1].classList.toggle("hidden")
+        j++;
+      }
+      else{
+        notizie.children[j].classList.toggle("flex")
+        notizie.children[j].classList.toggle("hidden")
+        j = 1;
+        notizie.children[j].classList.toggle("flex")
+        notizie.children[j].classList.toggle("hidden")
+      }
+      
+    })
+  </script>
+  
+</body>
+</html>
